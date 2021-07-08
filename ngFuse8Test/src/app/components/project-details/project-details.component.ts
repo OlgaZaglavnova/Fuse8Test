@@ -15,7 +15,6 @@ export class ProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
-      // console.log('SertificateComponent params=', params);
       this.id = +params.id;
     });
   }
