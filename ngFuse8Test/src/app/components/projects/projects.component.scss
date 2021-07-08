@@ -1,0 +1,98 @@
+.projects {
+    padding: 36px 50px;
+
+    &_header {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+    
+        color: #45852D;
+    }
+    &_filter {
+        display: flex;
+        flex-direction: row;
+    
+        &_title {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.3px;
+            color: #363636;
+            margin-right: 25px;
+        }
+        &_input {
+            width: 418px;
+            height: 50px;
+            padding: 15px;
+            
+            border: 1px solid #D8D8D8;
+            box-sizing: border-box;
+            border-radius: 25px;
+            outline: none;
+        }
+    }
+
+    &_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &_seemore{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 41px;
+        &_btn {
+            width: 150px;
+            height: 50px;
+            
+            border: 1px solid #D8D8D8;
+            box-sizing: border-box;
+            border-radius: 25px;
+            margin: 0 auto;
+            cursor: pointer;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.3px;
+            color: #363636;
+            &:active {
+                background-color: #363636 ;
+                color: white;
+                border: 2px solid #383838;
+            }
+            &__title {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            &__chevron{
+                display: flex;
+                flex-direction: column;
+                &__up {
+                    width: 8px;
+                    height: 8px;
+                    border-top: 2px solid #363636;
+                    transform: translateY(8px) translateX(1px) rotate(55deg);
+                }
+                &__down {
+                    width: 8px;
+                    height: 8px;
+                    border-right: 2px solid #363636;
+                    transform: rotate(35deg);
+                }
+            }
+        }
+    }
+    
+}

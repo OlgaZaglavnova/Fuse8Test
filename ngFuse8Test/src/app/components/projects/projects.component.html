@@ -1,0 +1,31 @@
+<div class="projects" *ngIf="data$ | async as data; else loading">
+    <p class="projects_header">{{ projectsTitle }}</p>
+    <div class="projects_filter">
+        <p class="projects_filter_title">Filter</p>
+        <input type="text" class="projects_filter_input" [(ngModel)]="filterText"
+            (ngModelChange)="filterTextOnChange($event)">
+    </div>
+
+    <div class="projects_cards">
+        <app-project-card *ngFor="let dataItem of houses; index as i" [dataItem]="dataItem"
+            [pictureName]="'house'+(i % 3 + 1)" [idx]="i"></app-project-card>
+
+    </div>
+    <div class="projects_seemore">
+        <button class="projects_seemore_btn">
+            <div class="projects_seemore_btn__title">
+                <div>
+                    See more
+                </div>
+                <div class="projects_seemore_btn__chevron">
+                    <div class="projects_seemore_btn__chevron__up"></div>
+                    <div class="projects_seemore_btn__chevron__down"></div>
+                </div>
+            </div>
+
+        </button>
+    </div>
+</div>
+<ng-template #loading>
+    Loading...
+</ng-template>

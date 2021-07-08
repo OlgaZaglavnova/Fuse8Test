@@ -1,0 +1,18 @@
+<div class="card">
+    <a [routerLink]="['/details', idx]">
+        <div class="card_picture">
+            <img class="card_picture__img" [src]="pictureAddress" alt="house image">
+            <div class="card_type" [class.card_type__support]="dataItem.type===dataType.SUPPORT_AVAILABLE">{{
+                dataItem.type}}</div>
+        </div>
+        <div class="card_data">
+            <div class="card_data__title bold">{{ dataItem.title }}</div>
+            <div class="card_data__text">{{ dataItem.address }}</div>
+            <div>
+                New Properties for Sale from <span class="bold">£{{ dataItem.price | number}}</span>
+            </div>
+            <div class="card_data__ps">Shared Ownership Available</div>
+        </div>
+    </a>
+
+</div>
