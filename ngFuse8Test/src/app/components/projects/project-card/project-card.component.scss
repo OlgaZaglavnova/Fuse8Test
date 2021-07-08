@@ -1,62 +1,65 @@
 .card {
-    min-width: 379px;
+  min-width: 379px;
 
-    flex: 1 1 auto;
-    margin: 19px 11px;
+  flex: 1 1 auto;
+  margin: 19px 11px;
 
-    background: #F8F8F8;
-    border: 1px solid #D8D8D8;
-    box-sizing: border-box;
-    &_picture {
-        height: 233px;
-        position: relative;
-        &__img {
-            min-width: 379px;
-            height: 100%;
-        }
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  & a {
+    text-decoration: none;
+  }
+  &_picture {
+    height: 233px;
+    position: relative;
+    &__img {
+      min-width: 379px;
+      height: 100%;
     }
-    &_type {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: 30px;
-        background-color: #006f79;
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        line-height: 30px;
-        padding: 0 10px;
-        &__support {
-            background-color: #EC6608;
-        }
+  }
+  &_type {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    background-color: #006f79;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 0 10px;
+    &__support {
+      background-color: #ec6608;
     }
-    &_data {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
-        color: #363636;
-        padding: 15px 20px 17px 20px;
-        &__text{
-            margin-bottom: 15px;
-        } 
-        &__title{
-            font-size: 20px;
-            line-height: 27px;
-            margin-bottom: 2px;
-        }
-        &__ps{
-            margin-top: 7px;
-            font-size: 14px;
-            line-height: 19px;
-        }
+  }
+  &_data {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #363636;
+    padding: 15px 20px 17px 20px;
+    &__text {
+      margin-bottom: 15px;
     }
+    &__title {
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 2px;
+    }
+    &__ps {
+      margin-top: 7px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
 }
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
